@@ -13,4 +13,4 @@ Used to collect forensic information from a live AIX system prior to taking othe
 
 * SIEM_syslog_transaction_check.sh
 
-Used to implement a synthetic transaction for Nix servers to send a message to your SIEM every day to ensure the system is still online.  Daily review your SIEM for the total count of test messages received.  Drops in total count indicate systems or networks are having issues.  Run the script out of cron at 23:59 to generate a random time to send the test message.  Give script to sysadmin to include in golden images or post install procedures.
+Used to implement a synthetic transaction for Nix servers to send a message to your SIEM every day to ensure the system is still online.  Daily review your SIEM for the total count of test messages received.  Drops in total count indicate systems or networks are having issues.  Run the script out of cron at midnight everyday to generate a random time to send the test message.  Give script to sysadmin to include in golden images or post install procedures.
