@@ -1,9 +1,9 @@
 #!/bin/bash
 # SIEM_syslog_transaction_check.sh
 # Author: raresteak
-# Usage: Run script at midnight everyday from cron on every server in enterprise to receive a test message to your SIEM at a random 
-# time throughout the day.  The purpose of the random time is so your SIEM doesn't get overloaded by a sudden in rush 
-# should all end points send a message at the same time.
+# Usage: Run script at _midnight_ everyday from cron on every server in enterprise to send a test message to your SIEM at a random 
+# time (00:01 to 23:59) throughout the day using at and logger.  The purpose of the random time is so your SIEM doesn't get overloaded 
+# by a sudden inrush should all end points send a message at a static time.
 # Requirements: syslog forwarding is already setup to SIEM
 
 # Change to suit your needs
