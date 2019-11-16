@@ -6,7 +6,7 @@
 # by a sudden inrush should all end points send a message at a static time.
 # The reason I'm using _at_ here is because _at_ jobs survive reboots.  Whereas a script that is run at midnight that sleeps a random
 # number of seconds before sending the alert message would not surive a reboot.
-# Requirements: syslog forwarding is already setup to SIEM
+# Requirements: At installed, and syslog forwarding ( *.info ) to your SIEM or central syslog collector.
 
 # Change to suit your needs
 MESSAGE="ENDPOINT SIEM CHECKIN"
