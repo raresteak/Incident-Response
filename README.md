@@ -17,4 +17,4 @@ Used to implement a synthetic transaction for Nix servers to send a message to y
 
 * create_SIEM_scheduled_task.ps1
 
-Used to create a scheduled task on Windows to impelement a systhetic transaction to your SIEM.   The task is created at a random time so not all end points flood the SIEM at the exact same time every day.  Will generate a 4688 event ID with a known echo value to query the SIEM.
+Used to create a scheduled task on Windows to impelement a synthetic transaction to your SIEM.   The task is created at a random time so not all end points flood the SIEM at the exact same time every day.  Will generate a 4688 event ID with a known echo value to query the SIEM.
